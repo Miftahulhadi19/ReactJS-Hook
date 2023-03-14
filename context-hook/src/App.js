@@ -19,16 +19,29 @@ export const ThemeContext = createContext({
 export const UserContext = React.createContext();
 export const ChanelContext = React.createContext();
 function App() {
+  const [user, setUser] = useState({});
+
+  useEffect(() => {
+    const user = {
+      name: 'Jhon Doe',
+      avatar: 'https://randomuser.me/api/portraits/women/83.jpg',
+    };
+    setUser(user);
+  }, []);
+
+  const contextValue = {
+    user,
+  };
   return (
     <div className='App'>
-      <UserContext.Provider value={'Miftahul Hadi'}>
+      {/* <UserContext.Provider value={'Miftahul Hadi'}>
         <ChanelContext.Provider value={'learnCode'}>
           <ComponentC />
         </ChanelContext.Provider>
-      </UserContext.Provider>
-      {/* <AppContext.Provider value={contextValue}>
+      </UserContext.Provider> */}
+      <AppContext.Provider value={contextValue}>
         <Navbar />
-      </AppContext.Provider> */}
+      </AppContext.Provider>
 
       {/* <TopBar />
       <Footer /> */}
