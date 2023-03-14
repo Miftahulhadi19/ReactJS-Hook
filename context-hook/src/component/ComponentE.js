@@ -7,7 +7,7 @@ function ComponentE() {
   const chanel = useContext(ChanelContext);
   return (
     <div>
-      {/* <ComponentF /> */}
+      <ComponentF />
       {user} - {chanel}
     </div>
   );

@@ -11,8 +11,7 @@ function ComponentF() {
               {(chanel) => {
                 return (
                   <div>
-                    This is user context chanel : {user} From chanel context :{' '}
-                    {chanel}
+                    This is user context : {user} From chanel context : {chanel}
                   </div>
                 );
               }}
