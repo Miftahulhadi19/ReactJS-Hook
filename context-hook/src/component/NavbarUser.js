@@ -1,7 +1,7 @@
 import NavbarUserAvatar from './NavbarUserAvatar';
 import NavbarUserText from './NavbarUserText';
 
-function NavbarUser({ user }) {
+function NavbarUser() {
   return (
     <div>
       <NavbarUserAvatar />
