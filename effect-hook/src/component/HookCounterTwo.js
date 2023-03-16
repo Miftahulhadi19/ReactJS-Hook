@@ -12,10 +12,10 @@ function HookCounterTwo() {
   return (
     <div>
       counter : {counter}
-      <button onClick={() => setCounter(initial)}>reset</button>
       <button onClick={() => setCounter((prev) => prev + 1)}>increment</button>
       <button onClick={() => setCounter((prev) => prev - 1)}>decrement</button>
       <button onClick={incrementFive}>increment 5</button>
+      <button onClick={() => setCounter(initial)}>reset</button>
     </div>
   );
 }
