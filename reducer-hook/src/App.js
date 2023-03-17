@@ -5,6 +5,7 @@ import CounterTwo from './component/CounterTwo';
 import CounterThree from './component/CounterThree';
 import DataFetchingOne from './component/DataFetchingOne';
 import DataFetchingTwo from './component/DataFetchingTwo';
+import InputReducer from './component/InputReducer';
 
 const initialState = 0;
 const reducer = (state, action) => {
@@ -34,7 +35,8 @@ function App() {
         {/* <CounterThree /> */}
         {/* {count} */}
         {/* <DataFetchingOne /> */}
-        <DataFetchingTwo />
+        {/* <DataFetchingTwo /> */}
+        <InputReducer />
       </div>
     </CountContext.Provider>
   );
