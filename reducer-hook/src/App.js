@@ -3,9 +3,6 @@ import './App.css';
 import CounterOne from './component/CounterOne';
 import CounterTwo from './component/CounterTwo';
 import CounterThree from './component/CounterThree';
-import ComponentA from './component/ComponentA';
-import ComponentB from './component/ComponentB';
-import ComponentC from './component/ComponentC';
 import DataFetchingOne from './component/DataFetchingOne';
 import DataFetchingTwo from './component/DataFetchingTwo';
 
@@ -36,9 +33,6 @@ function App() {
         {/* <CounterTwo /> */}
         {/* <CounterThree /> */}
         {/* {count} */}
-        {/* <ComponentA /> */}
-        {/* <ComponentB /> */}
-        {/* <ComponentC /> */}
         {/* <DataFetchingOne /> */}
         <DataFetchingTwo />
       </div>
